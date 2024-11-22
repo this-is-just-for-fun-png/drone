@@ -135,7 +135,7 @@
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.2,
         "min_via_annular_width": 0.15,
-        "min_via_diameter": 0.21,
+        "min_via_diameter": 0.55,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -186,6 +186,8 @@
         0.0,
         0.2,
         0.25,
+        0.3,
+        0.5,
         0.75,
         1.5
       ],
@@ -221,8 +223,20 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.81,
-          "drill": 0.5
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.7,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.75,
+          "drill": 0.45
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false
@@ -619,6 +633,10 @@
       {
         "netclass": "SWD",
         "pattern": "SW**"
+      },
+      {
+        "netclass": "Analog",
+        "pattern": "PH_C"
       }
     ]
   },
